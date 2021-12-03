@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+
+import ErrorBoundary from './components/error-boundaries/ErrorBoundary';
+import Portal from './components/portals/Portal';
+import ReactRef from './components/react-refs/ReactRef';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <section className="my-5">
+        <ErrorBoundary />
+      </section>
+      <section className="mb-5">
+        <Portal />
+      </section>
+      <section>
+        <ReactRef />
+      </section>
     </div>
   );
 }
