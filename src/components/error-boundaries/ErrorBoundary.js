@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import ErrorBoundaryChild from './ErrorBoundaryChild';
 import * as Sentry from "@sentry/react";
+
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);

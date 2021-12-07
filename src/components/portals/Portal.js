@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import ModalBackground from './ModalBackground';
+
 function Portal() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +40,7 @@ function Portal() {
         </div>
       </div>
       {isOpen && (
-        <div><p>Hello</p></div>
+        <ModalBackground />
       )}
     </div>
   )
